@@ -1,14 +1,11 @@
-package com.example.organizze1;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.organizze1.Activitys;
 
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.organizze1.Activitys.CadastrarActivity;
-import com.example.organizze1.Activitys.LoginActivity;
+import com.example.organizze1.R;
 import com.heinrichreimersoftware.materialintro.app.IntroActivity;
 import com.heinrichreimersoftware.materialintro.slide.FragmentSlide;
 
