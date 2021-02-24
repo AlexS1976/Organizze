@@ -7,4 +7,12 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="colorpimaryDespesa">#ff706a</color>
+    <color name="colorpimarydarkDespesa">#e66560</color>
+    <color name="colorAccentDespesa">#ff706a</color>
+
+    <color name="colorpimaryReceita">#00d39e</color>
+    <color name="colorpimarydarkReceita">#00be8b</color>
+    <color name="colorAccentReceita">#00d39e</color>
 </resources>

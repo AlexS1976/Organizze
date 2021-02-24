@@ -9,10 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Organizze">
-        <activity android:name="com.example.organizze1.Activitys.CadastrarActivity"></activity>
-        <activity android:name="com.example.organizze1.Activitys.LoginActivity" />
         <activity
-            android:name="com.example.organizze1.Activitys.MainActivity"
+            android:name=".Activitys.PrincipalActivity"
+            android:label="@string/title_activity_principal"
+            android:theme="@style/Theme.Organizze.NoActionBar"></activity>
+        <activity android:name=".Activitys.CadastrarActivity" />
+        <activity android:name=".Activitys.LoginActivity" />
+        <activity
+            android:name=".Activitys.MainActivity"
             android:theme="@style/Theme.Intro">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -92,8 +92,7 @@ public class CadastrarActivity extends AppCompatActivity {
             public void onComplete(@NonNull Task<AuthResult> task) {
 
                 if (task.isSuccessful()){
-                    Toast.makeText(CadastrarActivity.this,
-                            "Cadastro feito com sucesso", Toast.LENGTH_LONG).show();
+                    finish();
                 }else{
 
                     String excecao = "";
