@@ -9,10 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Organizze">
+        <activity android:name=".Activitys.SaidaActivity" android:theme="@style/despesaTheme"></activity>
+        <activity android:name=".Activitys.EntradaActivity" android:theme="@style/receitaTheme" />
         <activity
             android:name=".Activitys.PrincipalActivity"
             android:label="@string/title_activity_principal"
-            android:theme="@style/Theme.Organizze.NoActionBar"></activity>
+            android:theme="@style/Theme.Organizze.NoActionBar" />
         <activity android:name=".Activitys.CadastrarActivity" />
         <activity android:name=".Activitys.LoginActivity" />
         <activity
