@@ -4,8 +4,10 @@ package com.example.organizze1.Activitys;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 import com.example.organizze1.Config.ConfiguracaoFirebase;
+import com.example.organizze1.Model.Usuario;
 import com.example.organizze1.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.heinrichreimersoftware.materialintro.app.IntroActivity;
@@ -79,6 +81,7 @@ public class MainActivity extends IntroActivity {
         autenticacao = ConfiguracaoFirebase.getFirebaseAutenticacao();
         //autenticacao.signOut();
         if( autenticacao.getCurrentUser() != null){
+
             abrirTelaPrincipal();
         }
 
