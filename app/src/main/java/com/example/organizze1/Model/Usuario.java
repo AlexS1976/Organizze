@@ -10,6 +10,8 @@ public class Usuario {
     private String email;
     private String senha;
     private String idUsuario;
+    private double receitaTotal = 0.00;
+    private double despesaTotal = 0.00;
 
     public Usuario() {
     }
@@ -52,6 +54,22 @@ public class Usuario {
 
     public void setIdUsuario(String idUsuario) {
         this.idUsuario = idUsuario;
+    }
+
+    public double getReceitaTotal() {
+        return receitaTotal;
+    }
+
+    public void setReceitaTotal(double receitaTotal) {
+        this.receitaTotal = receitaTotal;
+    }
+
+    public double getDespesaTotal() {
+        return despesaTotal;
+    }
+
+    public void setDespesaTotal(double despesaTotal) {
+        this.despesaTotal = despesaTotal;
     }
 }
 
