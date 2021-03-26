@@ -68,6 +68,8 @@ public class EntradaActivity extends AppCompatActivity {
 
             movimentacao.salvar(data);
 
+            finish();
+
         }
 
     }

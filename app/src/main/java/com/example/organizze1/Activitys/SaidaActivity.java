@@ -71,6 +71,8 @@ public class SaidaActivity extends AppCompatActivity {
 
             movimentacao.salvar(data);
 
+            finish();
+
         }
 
 
