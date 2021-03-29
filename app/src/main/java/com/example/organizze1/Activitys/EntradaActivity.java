@@ -52,7 +52,6 @@ public class EntradaActivity extends AppCompatActivity {
         if(validarCamposReceita() ){
 
             movimentacao = new Movimentacao();
-
             String data = campoData.getText().toString();
             Double valorRecuperado = Double.parseDouble(campoValor.getText().toString());
 

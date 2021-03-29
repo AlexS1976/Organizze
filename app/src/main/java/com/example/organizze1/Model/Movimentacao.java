@@ -21,6 +21,7 @@ public class Movimentacao {
         FirebaseAuth autenticacao = ConfiguracaoFirebase.getFirebaseAutenticacao();
         String idUsuario = Base64Custon.codificarBase64( autenticacao.getCurrentUser().getEmail());
         String mesAno = DateCustom.mesAnoDataEscolhida(data);
+
         DatabaseReference firebase = ConfiguracaoFirebase.getFireBaseDataBase();
         firebase.child("movimentacao")
                 .child(idUsuario)

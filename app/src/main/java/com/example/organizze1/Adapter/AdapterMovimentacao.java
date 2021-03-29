@@ -44,6 +44,8 @@ public class AdapterMovimentacao extends RecyclerView.Adapter<AdapterMovimentaca
         if (movimentacao.getTipo() == "d" || movimentacao.getTipo().equals("d")) {
             holder.valor.setTextColor(context.getResources().getColor(R.color.colorAccentDespesa));
             holder.valor.setText("-" + movimentacao.getValor());
+        }else{
+            holder.valor.setTextColor(context.getResources().getColor(R.color.colorAccentReceita));
         }
     }
 
