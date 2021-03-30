@@ -138,9 +138,8 @@ public class PrincipalActivity extends AppCompatActivity {
                         .child(mesAnoSelecionado);
                 movimentacaoRef.child( movimentacao.getKey()).removeValue();
                 adapterMovimentacao.notifyItemRemoved(position);
-                Toast.makeText(PrincipalActivity.this,
-                        "Excluído",
-                        Toast.LENGTH_SHORT).show();
+                atualizarSaldo();
+                //Toast.makeText(PrincipalActivity.this,"Excluído",Toast.LENGTH_SHORT).show();
 
             }
         });
@@ -162,6 +161,25 @@ public class PrincipalActivity extends AppCompatActivity {
 
 
     }
+
+    public void atualizarSaldo(){
+        String emailUsuario = autenticacao.getCurrentUser().getEmail();
+        String idUsuario = Base64Custon.codificarBase64(emailUsuario);
+        usuarioRef = firebaseRef.child("usuarios").child(idUsuario);
+
+        if(movimentacao.getTipo().equals("R")){
+                receitaTotal = receitaTotal - movimentacao.getValor();
+                usuarioRef.child("receitaTotal").setValue(receitaTotal);
+            }
+
+        if(movimentacao.getTipo().equals("d")){
+            despesaTotal = despesaTotal - movimentacao.getValor();
+            usuarioRef.child("despesaTotal").setValue(despesaTotal);
+        }
+
+    }
+
+
     public void recuperarMovimentacoes(){
         String emailUsuario = autenticacao.getCurrentUser().getEmail();
         String idUsuario = Base64Custon.codificarBase64(emailUsuario);
